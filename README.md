@@ -1,5 +1,8 @@
 In the Github Repository for this assignment, please include the following in a README file in the root directory of your repository:
+
 1. Describe the goal of the application and value to a user
+
+This application is to sell leggings. Users can filter the products by choosing the size and length they want. A sort function that can display items from lowest to highest price. There is a shopping cart that will calculate the total prices and items purchased.
 
 2. Link to your deployed web application running online
 https://happykitten123456.github.io/legging/
@@ -27,5 +30,7 @@ If you select "Medium-25''-sort by price", filterFuc in Menu.js will pass the st
 If you press "Add to cart", the product id will be passed to addProductItem in App.js. The information of the selected data will be passed to CartList in App.js. The change in CartList will be notify to component CartItem and Cart. They will calculate the total price and print cart information.
 
 4. Note the usability principles considered for layout and hierarchy
+
+"Checkbox" for selection, Large text for more important titles, highlight the price in bold. Nice pictures for product along with some description. Everything can be reset without refreshing the page.
 
 
