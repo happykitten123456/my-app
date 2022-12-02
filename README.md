@@ -1,70 +1,25 @@
-# Getting Started with Create React App
+In the Github Repository for this assignment, please include the following in a README file in the root directory of your repository:
+1. Describe the goal of the application and value to a user
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+2. Link to your deployed web application running online
+https://happykitten123456.github.io/legging/
 
-## Available Scripts
+3. Explain the organization of your Components, and the props and state related to them
 
-In the project directory, you can run:
+I have 6 components:
+Component 1: App. (in App.js) State for this component is product list and cart list. Product list is to show items that matches the criterias. Cart list is to save items that are added to cart.
+Component 2: Meun. (in Menu.js) State for this component is size, length, and sortType. Props has a function named "filterFuc" that pass the state to product list. This information will be used by the APP component.
+Component 3: ProductItem. (in ProductList.js) Props is the a product in dataset. This component will return a card for an item.
+Component 4: ProductList. (in ProductList.js) Props is a list of products in dataset. This component will return a series of items that matches the critera. 
+Component 5: CartItem. (in Cart.js) Props is the product that users add to cart (includig title, number of items, and price), an add function, an a remove function. This component is use to update the shopping cart for each item.
+Component 6: Cart. (in Cart.js) Props is a list of items in the cart, an add function, and a remove function. This component is use to display the shopping cart, and calculate the total number of items purchased and total prices.
 
-### `npm start`
+For example:
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+If you select "Medium-25''-sort by price", filterFuc in Menu.js will pass the state (size, length, sortType) to filterProductList in App.js. filterProductList will select the data that matches these critera and update the ProductList.js. ProductList.js will return all the items and display in the page.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+If you press "Add to cart", the product id will be passed to addProductItem in App.js. The information of the selected data will be passed to CartList in App.js. The change in CartList will be notify to component CartItem and Cart. They will calculate the total price and print cart information.
 
-### `npm test`
+4. Note the usability principles considered for layout and hierarchy
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
